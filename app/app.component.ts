@@ -1,7 +1,17 @@
+
+
+
 import {Component} from 'angular2/core';
+import {SimpleHTTPComponent} from './SimpleHTTPComponent';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    directives: [SimpleHTTPComponent],
+    template: `<h2>Angular Http App</h2>
+              <simple-http></simple-http>
+            `
 })
-export class AppComponent { }
+
+export class AppComponent { 
+        
+}
